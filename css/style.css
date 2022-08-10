@@ -57,6 +57,20 @@ main {
 max-width: 1140px;
 }
 
+main h3 { 
+    text-transform: uppercase;
+}
+
+main section {
+    border-bottom: 4px solid rgb(206, 11, 11);
+}
+
+/* usage of :last-child Selector to remowe border */
+main section:last-child {
+    border-bottom: none;
+    background-color: rgb(41, 199, 199);
+}
+
 .course {
 }
 
