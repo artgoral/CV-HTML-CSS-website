@@ -1,6 +1,6 @@
 # CV Website
 (Training project - HTML & CSS) 
->This is website containing my business card. Website currenty working thanks to GitHub Pages
+> This is website containing my Cv website. Website currenty working thanks to GitHub Pages.
 > Please do not hestitate to wisit website [_here_](https://artgoral.github.io/CV-HTML-CSS-website/).
 > (Or copy link: https://artgoral.github.io/CV-HTML-CSS-website/)
 
