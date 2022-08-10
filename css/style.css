@@ -72,13 +72,39 @@ main section:last-child {
 }
 
 .course {
+    display: flex;
+    display: -ms-flexbox; /* integration with IE */
+    justify-content: center;
+    align-items: stretch;
+    /* align-items: stretch; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    margin-top: 15px;
 }
 
 .course .title {
+    font-weight: 900;
+    text-transform: none;
+    color: #509e98;
+    background-color: gold;
+
+    flex: 0 0 33.3%;
+    -ms-flex: 0 0 33.3%;
+    max-width: 33%
 }
 
 .course .descrition {
+    flex: 0 0 66.6%;
+    -ms-flex: 0 0 66.6%;
+    max-width: 66.6%
 }
+
+.course .descrition p {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: justify;
+    margin: 0ch;
+  }
 
 .school span {
 color: #A7B8BF;
