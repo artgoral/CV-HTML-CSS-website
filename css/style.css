@@ -137,19 +137,19 @@ color: #A7B8BF;
 footer {
 padding: 1em;
 }
-
-/* content property */
-ul {
-    list-style: none; /* Remove HTML bullets */
+/* content property - for certain li */
+/* ul.list-triangle or just .list-triangle,  */
+ul.list-triangle {
+    list-style-type: none; /* Remove HTML bullets */
     padding: 0;
     margin: 0;
   }
 
-li {
+ul.list-triangle li {
     padding-left: 16px;     
 }
 
-li::before {
+ul.list-triangle > li::before {
     content: ""; /* Insert content that looks like bullets */
     padding-right: 10px;
     width: 0px;
@@ -161,6 +161,7 @@ li::before {
     vertical-align: middle;
     margin-right: 5px;
 }
+
 /* easiest way */
 /*
 li::before {
@@ -169,3 +170,33 @@ li::before {
     color: blue; /* Or a color you prefer *-/
 }
 */
+
+/*emoji as marker*/
+ul.emoji {
+    list-style-type: none; /* Remove HTML bullets */
+    padding: 0;
+    margin: 0;
+  }
+
+ul.emoji .PL {
+    padding-left: 16px;     
+}
+
+ul.emoji > .PL::before {
+    content: "🇵🇱"; /* Insert content that looks like bullets */
+    padding-right: 10px;
+    width: 0px;
+    height: 0px;
+}
+
+ul.emoji .GB {
+    padding-left: 16px;     
+}
+
+ul.emoji > .GB::before {
+    content: "🇬🇧"; /* Insert content that looks like bullets */
+    padding-right: 10px;
+    width: 0px;
+    height: 0px;
+}
+
