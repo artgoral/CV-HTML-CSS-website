@@ -10,7 +10,7 @@ body {
 }
   
 article {
-padding:0 1em;
+padding: 0 1em;
 }
 
 section{
@@ -132,6 +132,12 @@ main section:last-child {
 
 .school span {
 color: #A7B8BF;
+text-decoration: underline;
+font-style: italic;
+}
+
+.school strong {
+    text-transform: capitalize;
 }
 
 footer {
